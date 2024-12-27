@@ -42,7 +42,7 @@ class WSClient:
         sock.close()
         return port
 
-    async def handler(self, websocket, path):
+    async def handler(self, websocket, path=None):
         self.ws = websocket
         while True:
             try:
